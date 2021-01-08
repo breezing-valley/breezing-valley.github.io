@@ -15,7 +15,7 @@ jobs:
             - name: Install
               run: |
                   npm install 
-                  ionic build --prod
+                  npm run build:actions
             - name: Build and Deploy
               uses: JamesIves/github-pages-deploy-action@releases/v3
               with:
