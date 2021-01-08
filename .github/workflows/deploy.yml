@@ -15,10 +15,10 @@ jobs:
             - name: Install
               run: |
                   npm install 
-                  npm run build:actions
+                  ionic build --prod
             - name: Build and Deploy
               uses: JamesIves/github-pages-deploy-action@releases/v3
               with:
                   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
                   BRANCH: gh-pages
-                  FOLDER: dist
+                  FOLDER: www
