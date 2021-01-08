@@ -3,7 +3,7 @@ name: test ionic
 on:
     push:
         branches:
-            - dev # default branch
+            - master # default branch
 
 jobs:
     build-and-deploy:
